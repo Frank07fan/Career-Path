@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Path</title>
+  <meta name="description" content="My career path, skills, projects, and reflections." />
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#12182b; --muted:#96a0b5; --text:#e7ecf5; --accent:#7cc4ff; --chip:#1c2541; --border:#1c2745
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,16,32,.95), rgba(11,16,32,.7));backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid var(--border)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:700;letter-spacing:.3px}
+    .navlinks a{margin-left:16px;opacity:.9}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:56px 0}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:22px}
+    h1{font-size:40px;line-height:1.15;margin:0 0 12px}
+    h2{font-size:22px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:var(--chip);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:999px;font-size:13px}
+    section{padding:18px 0 8px}
+    .timeline{position:relative;margin-left:8px}
+    .timeline:before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--border)}
+    .t-item{position:relative;padding-left:32px;margin-bottom:18px}
+    .t-item:before{content:"";position:absolute;left:3px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(124,196,255,.2)}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px}
+    .grid{display:grid;gap:16px}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}} 
+    footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--border);margin-top:28px}
+    .btn{display:inline-block;border:1px solid var(--border);background:transparent;color:var(--text);padding:10px 14px;border-radius:10px}
+    .btn:hover{border-color:var(--accent)}
+    input, textarea{width:100%;background:#0b1121;border:1px solid var(--border);color:var(--text);border-radius:10px;padding:10px}
+    textarea{min-height:110px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Career Path</div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#notes">Notes</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Your career, clearly told.</h1>
+        <p class="muted">A lightweight site to capture qualitative experiences: roles, lessons learned, and next steps.</p>
+        <div class="chips">
+          <span class="chip">Qualitative first</span>
+          <span class="chip">Static HTML</span>
+          <span class="chip">No backend</span>
+        </div>
+        <p style="margin-top:18px">
+          <a class="btn" href="#timeline">View timeline ↓</a>
+        </p>
+      </div>
+      <div class="panel">
+        <h2>Quick Editor Tips</h2>
+        <ul class="muted">
+          <li>Edit this file: <code>index.html</code></li>
+          <li>Replace placeholder text with your content</li>
+          <li>Commit → GitHub Pages to deploy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>About</h2>
+        <p>Write a short intro about your goals and what this site captures. Keep it to 2–4 sentences. You can add links to your <a href="#">CV</a> or <a href="#">LinkedIn</a>.</p>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <h3>2025 — Exploring front‑end basics</h3>
+          <p class="muted">Shifted from Dash to static HTML for qualitative storytelling. Focus: clarity, structure, and consistent writing.</p>
+        </div>
+        <div class="t-item">
+          <h3>2024 — Data projects and dashboards</h3>
+          <p class="muted">Built internal dashboards; learned what to keep and what to simplify.</p>
+        </div>
+        <div class="t-item">
+          <h3>Earlier — Research & evaluation</h3>
+          <p class="muted">Collected experiences across roles; now consolidating them here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <h2>Notes & Reflections</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+        <article class="card">
+          <h3>What I value at work</h3>
+          <p class="muted">Autonomy, clear scope, and meaningful outputs.</p>
+        </article>
+        <article class="card">
+          <h3>Skills to grow next</h3>
+          <p class="muted">HTML/CSS fluency, lightweight JS for interactivity, and accessible writing.</p>
+        </article>
+        <article class="card">
+          <h3>Recent learnings</h3>
+          <p class="muted">Static sites deploy fast. Style first, then add features only if needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Replace this with your mailto link or form backend.');">
+          <label>Name<br><input type="text" placeholder="Your name" /></label><br><br>
+          <label>Message<br><textarea placeholder="Say hello…"></textarea></label><br><br>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <p class="muted" style="margin-top:10px">For a simple solution, change the form to a <code>mailto:</code> link, or hook up a static form service later.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> • Career Path
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
