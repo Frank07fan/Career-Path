@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "ExpenseAI",
+    "slug": "expense-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.expenseai.app"
+    },
+    "android": {
+      "package": "com.expenseai.app",
+      "adaptiveIcon": { "backgroundColor": "#0a0d16" }
+    }
+  }
+}
